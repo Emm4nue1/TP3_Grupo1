@@ -1,5 +1,4 @@
 package ar.edu.unju.fi.ejercicio2;
-import java.util.Iterator;
 import java.util.Scanner;
  class Ejercicio2 {
 	public static void main(String[]args) {
@@ -50,5 +49,6 @@ import java.util.Scanner;
 				}
 		
 		}
+		sc.close();
 }
 }

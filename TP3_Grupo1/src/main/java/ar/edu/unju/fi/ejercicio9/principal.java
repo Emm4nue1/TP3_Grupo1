@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class principal {
 
 	public static void main(String[] args) {
-		ArrayList<Producto> list = new ArrayList();
+		ArrayList<Producto> list = new ArrayList<Producto>();
 		Scanner scan = new Scanner(System.in);
 		int op=0; 
 		do{
@@ -51,6 +51,7 @@ public class principal {
 				break;
 			}
 			}while(op!=4);
+		scan.close();
 		}
 
 	}
