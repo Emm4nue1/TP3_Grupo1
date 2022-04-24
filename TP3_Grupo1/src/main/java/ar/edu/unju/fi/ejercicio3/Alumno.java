@@ -5,11 +5,11 @@ package ar.edu.unju.fi.ejercicio3;
 	/*3.- Crear una clase denominada Alumno con los siguientes atributos: Nombre, apellido, Libreta Universitaria,
 	notas (arreglo que almacena 5 notas de tipo double).
 	 Construir dentro de la clase Alumno los siguientes
-	métodos:
+	mï¿½todos:
 	calcularPromedio() retorna el promedio de las notas del alumno.
-	obtenerNotaMaxima() que retorna la nota máxima.
-	Desde la clase principal solicitar al usuario que ingrese por consola los datos de un alumno y por último
-	muestre el resultado de cada método.
+	obtenerNotaMaxima() que retorna la nota mï¿½xima.
+	Desde la clase Principal solicitar al usuario que ingrese por consola los datos de un alumno y por ï¿½ltimo
+	muestre el resultado de cada mï¿½todo.
 	*/
 	public class Alumno {
 		private String nombre;
