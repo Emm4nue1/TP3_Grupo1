@@ -16,83 +16,118 @@ package ar.edu.unju.fi.ejercicio3;
 		private String apellido;
 		private int libretaU;
 		private double[] notas ;
+		private double promedio=0;
+		private double max=0;
 		
-		
-		public Alumno()
-		{
-			nombre = "";
-			apellido = "";
-			libretaU = 0;
-			notas[5] = 0;	
+		public Alumno() {
+			// TODO Auto-generated constructor stub
 		}
 		
-		public Alumno(String n,String a, int l,double[] nt) 
-		{
-			nombre = n;
-			apellido = a;
-			libretaU = l;
-			notas = nt;	
-			
+		/**
+		 * @param nombre
+		 * @param apellido
+		 * @param libretaU
+		 * @param notas
+		 */
+		public Alumno(String nombre, String apellido, int libretaU, double[] notas) {
+			super();
+			this.nombre = nombre;
+			this.apellido = apellido;
+			this.libretaU = libretaU;
+			this.notas = notas;
 		}
-	
+
+
+
+
+
+		/**
+		 * @return the promedio
+		 */
+		public double getPromedio() {
+			return calcularPromedio();
+		}
+
+
+		/**
+		 * @return the max
+		 */
+		public double getMax() {
+			return notasMax();
+		}
+
+
+		/**
+		 * @return the nombre
+		 */
 		public String getNombre() {
 			return nombre;
 		}
-	
-	
+
+		/**
+		 * @param nombre the nombre to set
+		 */
 		public void setNombre(String nombre) {
 			this.nombre = nombre;
 		}
-	
-	
+
+		/**
+		 * @return the apellido
+		 */
 		public String getApellido() {
 			return apellido;
 		}
-	
-	
+
+		/**
+		 * @param apellido the apellido to set
+		 */
 		public void setApellido(String apellido) {
 			this.apellido = apellido;
 		}
-	
-	
+
+		/**
+		 * @return the libretaU
+		 */
 		public int getLibretaU() {
 			return libretaU;
 		}
-	
-	
+
+		/**
+		 * @param libretaU the libretaU to set
+		 */
 		public void setLibretaU(int libretaU) {
 			this.libretaU = libretaU;
 		}
-	
-	
+
+		/**
+		 * @return the notas
+		 */
 		public double[] getNotas() {
 			return notas;
 		}
-	
-	
+
+		/**
+		 * @param notas the notas to set
+		 */
 		public void setNotas(double[] notas) {
 			this.notas = notas;
 		}
-		
-		
-		
-		
+
 		public double calcularPromedio() {
 			double suma=0 ;
-			for(int i=0 ;i<this.notas.length;i++) 
+			for(int i=0 ;i<notas.length;i++) 
 				{
-				 suma=suma+this.notas[i];
+				 suma=suma+notas[i];
 				}
-			return suma / this.notas.length;
+			promedio=suma/notas.length;
+			return (promedio);
 		}
 	
 		public double notasMax() {
-			double max=0 ;
-			for(int i=0 ;i<this.notas.length;i++) 
-				{
-				 
-				 if (this.notas[i]>max){
-					 max = this.notas[i];
+			for(int i=0 ;i<notas.length;i++) 
+				{				 
+				 if (notas[i]>max){
+					 max = notas[i];
 				 }
 	
 				}
